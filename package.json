@@ -2,9 +2,9 @@
   "name": "ecommerceshop-microservice-favorites",
   "version": "1.0.0",
   "description": "Ecommerce Shop microservice for favorites.",
-  "main": "index.js",
+  "main": "src/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/server.js"
   },
   "repository": {
     "type": "git",
@@ -12,7 +12,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "AGPL-3.0-only",
   "type": "module",
   "bugs": {
     "url": "https://github.com/tamim-hmizi/EcommerceShop-microservice-favorites/issues"
@@ -24,5 +24,8 @@
     "jsonwebtoken": "^9.0.3",
     "mongoose": "^9.11.2",
     "prom-client": "^15.1.3"
+  },
+  "engines": {
+    "node": ">=22"
   }
 }
