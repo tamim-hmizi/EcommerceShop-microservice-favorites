@@ -7,11 +7,12 @@ import User from '../src/models/User.js';
 import Product from '../src/models/Product.js';
 import { bearer, useDatabase } from './helpers.js';
 
-useDatabase();
 
 const base = '/api/favorites';
 
 describe('favorites service', () => {
+  useDatabase();
+
   it('requires a token', async () => {
     await request(app).get(base).expect(401);
   });
